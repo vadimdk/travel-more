@@ -1,0 +1,11 @@
+$color-primary: #5474fd;
+$color-secondary: #496bfe;
+$color-select-section: #333333;
+$color-central-btn: #ff6363;
+
+@mixin flex ($justfy: space-between, $align: center, $direction: row) {
+    display: flex;
+    justify-content: $justfy;
+    align-items: $align;
+    flex-direction: $direction;
+}

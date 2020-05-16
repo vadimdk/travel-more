@@ -1,0 +1,348 @@
+@import "./../abstract/constants";
+
+.main__bg_containar {
+    width: 100%;
+    padding: 118px 1px;
+    background-image: url(/images/Main-bg-travel.png);
+    background-size: cover;
+}
+
+.main-wrapper {
+    @include flex();
+    max-width: 1145px;
+    margin: 0 auto;
+    // background-color: white;
+
+}
+
+
+
+.left__section_main {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 50px;
+    padding-left: 18px;
+
+}
+
+.explore__book_block {
+    @include flex(space-between, start, column);
+    width: 540px;
+
+    &.book--block-background {
+        background-color: rgba(35, 35, 35, 0.918);
+        padding-left: 30px;
+        padding-bottom: 50px;
+        margin: 100px 30px;
+
+        &p {
+            width: 480px;
+        }
+
+    }
+
+
+}
+
+.title__choose {
+    width: 260px;
+    margin-top: 28px;
+    font-size: 36px;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: "Aleo";
+    font-weight: 400;
+
+}
+
+.description {
+    width: 532px;
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+
+    & p {
+        width: 539px;
+        padding-top: 20px;
+        font-size: 16px;
+        letter-spacing: 2px;
+        line-height: 26px;
+        color: #e8e8e8;
+        font-family: "Josefin Sans";
+    }
+}
+
+.btn__eplore_book {
+    width: 225px;
+    margin-top: 45px;
+    padding-top: 19px;
+    height: 60px;
+    background-color: #5474fd;
+
+    cursor: pointer;
+    position: relative;
+
+    &:hover p {
+        color: blue;
+        font-weight: 900;
+    }
+
+    & p {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 26px;
+        color: #ffffff;
+        font-family: "Aleo";
+        font-weight: 400;
+        @extend %transition;
+        position: relative;
+        z-index: 4;
+    }
+
+
+
+
+}
+
+.btn__eplore_book::after {
+    content: '';
+    width: 110px;
+
+    min-height: 60px;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 50% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 50% 0);
+    background-color: #496bfe;
+    position: absolute;
+    top: 0;
+    left: -2px;
+    z-index: 2;
+    opacity: 0.9;
+
+}
+
+
+.right__section_main {
+    @include flex();
+    flex-wrap: wrap;
+    padding-left: 96px;
+
+}
+
+.bottom__img {
+    margin-top: 5px;
+    margin-left: 120px;
+}
+
+
+.icons__container {
+    width: 100%;
+    background-color: $color-select-section;
+}
+
+.icons__block {
+    @include flex(space-around);
+    width: 100%;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 5;
+}
+
+.icons__block--item {
+    @include flex (stretch, center, column);
+    width: 225px;
+    height: 160px;
+    margin: 2px 2px;
+    padding: 2px 3px;
+    // background-color: $color-select-section;
+}
+
+.circle-block {
+    @include flex(center, center, row);
+    width: 97px;
+    height: 97px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-color: $color-select-section;
+    cursor: pointer;
+    @extend %transition;
+
+    &:hover {
+        border-color: $color-primary;
+    }
+
+}
+
+.icon__title {
+    padding-top: 13px;
+    font-size: 36px;
+    line-height: 26px;
+    color: #e8e8e8;
+    font-family: "Aleo";
+    font-weight: 400;
+    text-align: center;
+    width: 225px;
+    height: 50px;
+    background-color: $color-select-section;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.wrapper {
+    @include flex();
+    height: 8px;
+}
+
+.curve__container--first {
+    width: 500px;
+    height: 100px;
+
+    position: relative;
+    top: 120px;
+    left: 86px;
+    z-index: 1;
+}
+
+.curve__container--second {
+    width: 500px;
+    height: 100px;
+
+    position: relative;
+    top: 120px;
+    left: -37px;
+    z-index: 2;
+}
+
+.block-black {
+    width: 880px;
+    height: 100px;
+    position: relative;
+    background-color: $color-select-section;
+    top: 180px;
+    z-index: 3;
+}
+
+.half__circle {
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+
+    border-right: 0px dashed red;
+    border-top: 2px dotted white;
+    border-left: 0px dashed red;
+    border-bottom: transparent;
+}
+
+
+
+.section__background {
+    width: 100%;
+    background-image: url(/images/section-bg.png);
+    background-size: cover;
+
+}
+
+.section {
+    padding-top: 37px;
+
+    @include flex(flex-start, flex-end, row);
+}
+
+.description--book {
+    padding-top: 14px;
+}
+
+.description--book p {
+    max-width: 480px;
+    padding-top: 29px;
+}
+
+h4 {
+    margin-top: 51px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: #e8e8e8;
+    font-family: "Josefin Sans";
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    text-transform: uppercase;
+    margin-top: 28px;
+    font-weight: 400;
+}
+
+.section__background_next {
+    background-image: url(/images/section-bg-next.png);
+    background-size: cover;
+}
+
+.section_next {
+    padding-top: 37px;
+
+    @include flex(flex-end, flex-end, row);
+}
+
+.feedback__title {
+    padding-top: 120px;
+    padding-bottom: 93px;
+    margin: 0 auto;
+    font-size: 36px;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: "Aleo";
+    font-weight: 400;
+    text-align: center;
+}
+
+.feedback__section {
+    width: 100%;
+    padding-bottom: 200px;
+    background: url(/images/bottom-bg-img.png) no-repeat;
+    background-size: cover;
+}
+
+.feedback__content {
+    width: 665px;
+    height: 284px;
+    background-color: #333333;
+
+
+}
+
+.feedback--flexbox {
+    @include flex(center, center, row);
+
+}
+
+.feedback__content {
+    @include flex(stretch, stretch, column);
+    padding-left: 60px;
+}
+
+.feedback__text {
+    width: 559px;
+
+    padding-top: 20px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: #e8e8e8;
+    font-family: "Josefin Sans";
+}
+
+i.fas.fa-quote-left {
+    font-size: 29px;
+    line-height: 22px;
+    color: #5474fd;
+    padding-right: 10px;
+    // font-family: "Font Awesome";
+}

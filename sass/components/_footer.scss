@@ -1,0 +1,75 @@
+// @import "./../abstract/constants";
+
+.footer {
+    @include flex(flex-end, flex-end, column);
+    width: 100%;
+    padding: 77px 0;
+    background: #232323;
+}
+
+.footer__block {
+    @include flex(stretch, center, column);
+    margin: 0 auto;
+    width: 170px;
+
+    & p {
+        width: 180px;
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        color: #ffffff;
+        font-family: "Josefin Sans";
+        text-align: center;
+    }
+}
+
+.footer__title {
+    margin-bottom: 15px;
+    font-size: 24px;
+    letter-spacing: 4px;
+    line-height: 26px;
+    color: #ffffff;
+
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.social__icons {
+    width: 167px;
+    margin-top: 30px;
+    @extend %flexList;
+}
+
+.icon {
+    fill: white;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    @extend %transition;
+
+}
+
+#youtube {
+    margin-top: 4px;
+    width: 22px;
+    height: 19px;
+
+    &:hover {
+        fill: rgb(255, 0, 0);
+    }
+
+}
+
+.icon--twitter:hover {
+    fill: rgb(94, 169, 221);
+}
+
+.icon--linkedin:hover,
+.icon--facebook:hover {
+    fill: rgb(0, 101, 153);
+}
+
+.icon--pinterest:hover {
+    fill: rgb(232, 27, 34);
+}

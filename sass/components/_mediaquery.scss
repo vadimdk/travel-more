@@ -1,0 +1,140 @@
+@import "./../abstract/constants";
+
+@media screen and (max-width: 1149px) {
+
+    .bottom__img {
+
+        margin-left: 0px;
+    }
+
+    .feedback__content {
+        padding-left: 5px;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+
+    .header__nav {
+        padding: 25px 60px;
+    }
+
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    .top__img {
+        margin-top: 10px;
+    }
+
+    .right__section_main {
+        justify-content: center;
+    }
+
+    .feedback__content {
+        padding-left: 20px;
+    }
+
+    .block-black,
+    .curve__container--first,
+    .curve__container--second {
+        display: none;
+    }
+
+    .wrapper {
+
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .header__wrapper {
+        max-width: 430px;
+    }
+
+    .search {
+        width: 422px;
+        flex-wrap: wrap;
+    }
+
+    input[type=search] {
+        width: 400px;
+        order: 1;
+    }
+
+    .btn__search {
+        margin-top: 10px;
+        order: 2;
+    }
+
+    .header__nav {
+        flex-direction: column;
+        padding: 15px 9px;
+    }
+
+    .nav__menu {
+        width: 425px;
+        height: auto;
+        flex-direction: column;
+        padding-left: 1px;
+        margin-bottom: 7px;
+    }
+
+    .menu__item {
+
+        margin-bottom: 20px;
+
+    }
+
+    .logo__nav {
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+
+    .explore__book_block {
+
+        max-width: 400px;
+    }
+
+    .description p {
+        width: 410px;
+    }
+
+    .main__bg_containar {
+        width: 100%;
+        padding: 70px 1px;
+    }
+
+    .right__section_main {
+
+        padding-left: 1px;
+    }
+
+    .icons__block {
+        flex-direction: column;
+    }
+
+    .description {
+        max-width: 405px;
+    }
+
+    .description--book p {
+        max-width: 400px;
+    }
+
+    .feedback__img>img {
+        width: 405px;
+    }
+
+    .feedback__content {
+        width: 405px;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .feedback__text {
+        width: 387px;
+    }
+
+}

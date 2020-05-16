@@ -1,0 +1,18 @@
+@import "../node_modules/normalize-scss/sass/normalize";
+
+// base
+@import "base/base";
+
+// abstract
+@import "abstract/constants";
+@import "abstract/placeholders";
+
+// components
+@import "components/header";
+@import "components/main";
+@import "components/footer";
+
+// layouts
+@import "layouts/layout";
+
+@import "components/mediaquery";

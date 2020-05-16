@@ -1,0 +1,203 @@
+@import "./../abstract/constants";
+
+.header {
+    @include flex(space-between, center, column);
+    width: 100%;
+    background-image: url('/images/Header-Image.png');
+    background-size: cover;
+}
+
+.header__wrapper {
+    @include flex(space-between, center, column);
+    width: 660px;
+    margin: 0 auto;
+    padding-top: 165px;
+    // background-color: $color-central-btn;
+
+}
+
+h1 {
+    width: 320px;
+    display: flex;
+    font-size: 48px;
+    padding-top: 112px;
+
+    letter-spacing: 3px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    flex: 5 25%;
+}
+
+.safe__travel_header {
+    width: 330px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-left: 5px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    flex: 1 25%;
+}
+
+.search {
+    @include flex(center, center, row);
+    width: 651px;
+    flex: 1 25%;
+    margin-top: 47px;
+
+}
+
+input[type=search] {
+    width: 500px;
+    height: 60px;
+    border: none;
+    background-color: #ffffff;
+
+    &::placeholder {
+        font-size: 14px;
+        padding-left: 3px;
+        letter-spacing: 2px;
+        line-height: 26px;
+        color: #999999;
+        font-family: "Josefin Sans";
+        text-align: center;
+    }
+
+    &:focus {
+
+        border: 1px solid #29B0D9;
+        /* Параметры рамки */
+    }
+}
+
+
+
+.btn__search {
+    @include flex(center, center, row);
+    width: 150px;
+    height: 60px;
+    background-color: #5474fd;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    width: 70px;
+    margin-left: 13px;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    background-color: #5474fd;
+    border: none;
+    color: #ffffff;
+    font-family: "Aleo";
+    font-weight: 400;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+.fa-2x {
+
+    padding-left: 15px;
+    color: white;
+    font-weight: 600;
+}
+
+
+.scroll__down {
+    font-size: 14px;
+    margin-top: 115px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: #ffffff;
+
+    font-family: "Josefin Sans";
+    text-align: center;
+    flex: 1 25%;
+}
+
+.haeder__angle-down {
+    margin-bottom: 126px;
+}
+
+.fas.fa-angle-down {
+    width: 13px;
+    height: 15px;
+    border-radius: 1px;
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+
+
+}
+
+.header__nav {
+    @include flex(space-around);
+    width: 100%;
+    background-color: $color-primary;
+
+    padding: 25px 130px;
+
+}
+
+.nav__menu {
+    @extend %flexList;
+    width: 535px;
+    height: 15px;
+    padding-left: 4px;
+    margin-bottom: 7px;
+}
+
+.logo__nav {
+    width: 167px;
+    height: 30px;
+    margin-right: 29px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    @extend %transition;
+
+
+    &:hover {
+
+        color: blue;
+
+    }
+}
+
+.menu__item {
+    min-width: 100px;
+    height: 15px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: "Aleo";
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    @extend %transition;
+
+    &:hover {
+
+        color: blue;
+        // border: 2px solid white;
+        // border-radius: 5px;
+    }
+}
