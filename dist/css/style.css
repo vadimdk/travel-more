@@ -325,7 +325,7 @@ input[type=submit] {
 .main__bg_containar {
   width: 100%;
   padding: 118px 1px;
-  background-image: url(/images/Main-bg-travel.png);
+  background-image: url(images/Main-bg-travel.png);
   background-size: cover;
 }
 
