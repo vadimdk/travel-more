@@ -59,7 +59,7 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  background-image: url("images/Header-Image.png");
+  background-image: url("https://vadimdk.github.io/travel-more/images/Header-Image.png");
   background-size: cover;
 }
 
