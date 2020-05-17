@@ -59,7 +59,7 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  background-image: url("https://github.com/vadimdk/travel-more/images/Header-Image.png");
+  background-image: url("/travel-more/images/Header-Image.png");
   background-size: cover;
 }
 
@@ -325,7 +325,7 @@ input[type=submit] {
 .main__bg_containar {
   width: 100%;
   padding: 118px 1px;
-  background-image: url("https://github.com/vadimdk/travel-more/images/Main-bg-travel.png")
+  background-image: url("/travel-more/images/Main-bg-travel.png");
   background-size: cover;
 }
 
@@ -630,7 +630,7 @@ input[type=submit] {
 
 .section__background {
   width: 100%;
-  background-image: url("https://github.com/vadimdk/travel-more//images/section-bg.png");
+  background-image: url("/travel-more//images/section-bg.png");
   background-size: cover;
 }
 
@@ -683,7 +683,7 @@ h5 {
 .section__background_next {
 
   
-  background-image: url("https://github.com/vadimdk/travel-more//images/section-bg-next.png");
+  background-image: url("/travel-more//images/section-bg-next.png");
 
   background-size: cover;
 }
@@ -721,7 +721,7 @@ h5 {
   width: 100%;
   padding-bottom: 200px;
 
-  background: url("https://github.com/vadimdk/travel-more//images/bottom-bg-img.png") no-repeat;
+  background: url("/travel-more//images/bottom-bg-img.png") no-repeat;
   background-size: cover;
 }
 
