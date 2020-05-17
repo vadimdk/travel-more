@@ -325,7 +325,7 @@ input[type=submit] {
 .main__bg_containar {
   width: 100%;
   padding: 118px 1px;
-  background-image: url(images/Main-bg-travel.png);
+  background-image: url("https://vadimdk.github.io/travel-moreimages/Main-bg-travel.png");
   background-size: cover;
 }
 
@@ -630,7 +630,7 @@ input[type=submit] {
 
 .section__background {
   width: 100%;
-  background-image: url(/images/section-bg.png);
+  background-image: url("https://vadimdk.github.io/travel-more/images/section-bg.png");
   background-size: cover;
 }
 
@@ -681,7 +681,7 @@ h5 {
 }
 
 .section__background_next {
-  background-image: url(/images/section-bg-next.png);
+  background-image: url("https://vadimdk.github.io/travel-more/images/section-bg-next.png");
   background-size: cover;
 }
 
@@ -717,7 +717,7 @@ h5 {
 .feedback__section {
   width: 100%;
   padding-bottom: 200px;
-  background: url(/images/bottom-bg-img.png) no-repeat;
+  background: url("https://vadimdk.github.io/travel-more/images/bottom-bg-img.png") no-repeat;
   background-size: cover;
 }
 
